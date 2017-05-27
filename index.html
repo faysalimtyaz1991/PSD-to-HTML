@@ -1,0 +1,438 @@
+<!doctype html>
+<html>
+	
+	<head>
+		<title>Website from PSD</title>
+
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" href="style.css" />
+
+		<link rel="stylesheet" href="css/animate.css" />
+
+
+		<script
+  src="https://code.jquery.com/jquery-3.1.1.js"
+  integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+  crossorigin="anonymous"></script>
+		<script src="js/masonry.js"></script>
+
+		<script src="js/slider.js"></script>
+
+		<script>
+			
+			$(document).ready(function(){
+
+				$('#header-slider').cycle({
+					fx:'scrollVert',
+					next: '#next',
+					prev: '#prev'
+				});
+
+				$('.menu-bars').click(function(){
+
+					$('nav').toggleClass('active-nav');
+
+				});
+
+
+				$(window).scroll(function(){
+					y = $(this).scrollTop();
+
+					//console.log(y);
+
+					if( y >= 225 ){
+						$('#content').addClass('animated bounceInUp');
+					}
+				});
+
+
+			});
+
+		</script>
+
+	</head>
+
+	<body>
+		
+	<div id="container">
+		
+		<!-- Header -->
+
+			<nav>
+				<ul>
+					<li>Home</li>
+					<li>About</li>
+					<li>Contact</li>
+					<li>FAQ</li>
+				</ul>
+			</nav>
+
+			<div id="header">
+				<div id="top-header">
+					<div class="menu-bars">
+						<i class="fa fa-bars" aria-hidden="true"></i>
+					</div>
+					<div class="logo"></div>
+					<div class="social-icons">
+						<i class="fa fa-rss" aria-hidden="true"></i>
+						<i class="fa fa-twitter" aria-hidden="true"></i>
+						<i class="fa fa-tumblr" aria-hidden="true"></i>
+						<i class="fa fa-facebook" aria-hidden="true"></i>
+						<i class="fa fa-search" aria-hidden="true"></i>
+					</div>
+				</div>
+
+				<div id="next"></div>
+				<div id="prev"></div>
+
+				<div id="header-slider">
+					
+					<img src="images/banner_image.jpg" />
+					<img src="images/2.jpg" />
+					<img src="images/3.jpg" />
+					<img src="images/4.jpg" />
+					<img src="images/5.jpg" />
+					<img src="images/6.jpg" />
+
+				</div>
+
+				<div id="subs-form" class="animated bounceInDown">
+					<table width="100%">
+						<tr>
+							<td width="20%"><span>SignUp to News Letter</span></td>
+							<td width="30%"><input type="text" placeholder="Your Name" /></td>
+							<td width="30%"><input type="text" placeholder="Your Email" /></td>
+							<td width="20%"><input type="button" class="subs-btn" value="Subscribe Now" /></td>
+						</tr>
+					</table>
+				</div>
+			</div>
+
+		<!-- End of header -->
+
+
+		<!-- Content section -->
+
+			<div id="content" class="">
+				
+				<div class="post">
+					<div class="post-wrapper">
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						<p>
+							Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+						</p>
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="img-box"></div>
+					<div class="post-wrapper withimg">
+						
+						
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div class="post">
+					<div class="post-wrapper">
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="post">
+					<div class="post-wrapper">
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						<p>
+							Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+						</p>
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+
+
+				<div class="post">
+					<div class="post-wrapper">
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						<p>
+							Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+						</p>
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="img-box"></div>
+					<div class="post-wrapper withimg">
+						
+						
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div class="post">
+					<div class="post-wrapper">
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						<p>
+							Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+						</p>
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="post">
+					<div class="post-wrapper">
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						<p>
+							Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+						</p>
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="post">
+					<div class="post-wrapper">
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						<p>
+							Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+						</p>
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+				<div class="post">
+					<div class="img-box"></div>
+					<div class="post-wrapper withimg">
+						
+						
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+
+					</div>
+
+				</div>
+
+
+				<div class="post">
+					<div class="post-wrapper">
+						<div class="top-icon">
+							<i class="fa fa-pencil" aria-hidden="true"></i>
+						</div>
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						<p>
+							Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+						</p>
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="post">
+					<div class="post-wrapper">
+						<span>Traveling</span>
+						<h2>Travel besT Adventure</h2>
+						<span>January 25, 2016</span>
+						<p>
+							Lorem ipsum doloirs sit amet, csatetur adipisicin, sed does eiusmod tehampor incididunt uts laboasre et dolhvaliqua. Ut enim  vem, nostrasuaations ullamco labiosi ut saaliquip exoi asea comoodo Disco choice is the have great work.
+						</p>
+						<input type="button" class="readmore" value="Read More" />
+						<div>
+							<div class="comment"></div>
+							<div class="social-icons1"></div>
+						</div>
+					</div>
+				</div>
+
+				
+
+				<div class="clear"></div>
+			</div>
+
+		<!-- End of Content section -->
+
+		<!-- Footer -->
+		<div id="footer">
+			
+			<div class="footer-section about">
+				<h2>About Blog</h2>
+				<p>
+					Lorem ipsum dolor sit amet, conser adipisicing  esse cillum dolore nulla pariatur. 
+				</p>
+				<div class="footer-signature"></div>
+			</div>
+			<div class="footer-section tweets">
+				<h2>Latest Tweets</h2>
+				<p>
+					@Twitter@magicalrebekah
+					<br />
+					Developer Advocate @heyval isaiyou knows the very well is about things .
+				</p>
+				<p>
+					@Twitter@magicalrebekah
+					<br />
+					Developer Advocate @heyval isaiyou knows the very well is about things .
+				</p>
+			</div>
+			<div class="footer-section instagram">
+				<h2>Follow me instagram</h2>
+				<p>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+					<div></div>
+				</p>
+			</div>
+			<div class="footer-section comments">
+				<h2>Latest Comments</h2>
+				<p>
+					From Alex:
+					<br />
+					Developer Advocate @heyval isaiyou know the very well is talking about things .
+				</p>
+				<p>
+					From Alex:
+					<br />
+					Developer Advocate @heyval isaiyou know the very well is talking about things .
+				</p>
+			</div>
+
+
+			<div class="clear"></div>
+		</div>
+		<!-- end of footer -->
+		<div id="footer-copyright">
+			@2015 copyright .all right reserved by awesome theme   i   terms policy   i   disclaimer
+		</div>
+
+	</div>
+
+
+	<script>
+		
+		$('#content').masonry({
+		  // set itemSelector so .grid-sizer is not used in layout
+		  itemSelector: '.post',
+		  // use element for option
+		  columnWidth: '.post',
+		  percentPosition: true
+		})
+
+	</script>
+
+	</body>
+
+</html>
